@@ -10,7 +10,7 @@ try {
     $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     //show on screen
-    var_dump($rows);
+    //var_dump($rows);
 
     //closing connection
     $pdo = null;
@@ -36,8 +36,8 @@ try {
     <h1>Song information</h1>
 
     <?php
-
-
+    $songID = $_GET['song_id'];
+    echo "<h3>Song id = $_GET[song_id]</h3>";
     ?>
 
     <footer>FOOTER</footer>
