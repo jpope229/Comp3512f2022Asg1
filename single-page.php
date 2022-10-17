@@ -1,3 +1,4 @@
+<?php require_once('includes/config.inc.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,10 +12,22 @@
 
 <body>
     <header>HEADER</header>
+
     <h1>Song information</h1>
 
+    <?php
+    $pdo = new PDO('sqlite:music.db');
 
+    //write sql
+    $statement = $pdo->query("SELECT * FROM songs");
 
+    //run sql
+    $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    //show on screen
+    var_dump($rows);
+
+    ?>
 
     <footer>FOOTER</footer>
 </body>
