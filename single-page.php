@@ -16,16 +16,25 @@
     <h1>Song information</h1>
 
     <?php
-    $pdo = new PDO('sqlite:.data/music.db');
+    try {
+        $connString = "sqlite:.data/music.db";
+        $pdo = new PDO($connString);
 
-    //write sql
-    $statement = $pdo->query("SELECT * FROM songs");
+        //write sql
+        $statement = $pdo->query("SELECT * FROM songs");
 
-    //run sql
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+        //run sql
+        $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    //show on screen
-    var_dump($rows);
+        //show on screen
+        var_dump($rows);
+
+        //closing connection
+        $pdo = null;
+    } catch (PDOException $e) {
+        die($e->getMessage());
+    }
+
     ?>
 
     <footer>FOOTER</footer>
