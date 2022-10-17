@@ -16,7 +16,7 @@
     <h1>Song information</h1>
 
     <?php
-    $pdo = new PDO('sqlite:music.db');
+    $pdo = new PDO('<sqlite:data/music.db');
 
     //write sql
     $statement = $pdo->query("SELECT * FROM songs");
@@ -26,7 +26,6 @@
 
     //show on screen
     var_dump($rows);
-
     ?>
 
     <footer>FOOTER</footer>
