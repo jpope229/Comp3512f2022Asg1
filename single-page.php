@@ -6,11 +6,14 @@ if (!empty($_GET['ID'])) {
         $pdo = new PDO(DBCONNSTRING);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         //write sql
-        $statement = $pdo->query("SELECT * FROM songs");
+        $passedID = $_GET['ID'];
+        $sql = "SELECT title, year FROM songs where song_id =$passedID";
+        $result = $pdo->query($sql);
         //run sql
-        $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
         //show on screen
-        var_dump($rows);
+        while ($row = $result->fetch()) {
+            var_dump($row);
+        }
 
         $pdo = null;
     } catch (PDOException $e) {
