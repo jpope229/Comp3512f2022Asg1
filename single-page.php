@@ -1,26 +1,9 @@
-<?php require_once('includes/config.inc.php');
+<?php
 
 if (!empty($_GET['ID'])) {
-
-    try {
-        $pdo = new PDO(DBCONNSTRING);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //write sql
-        $passedID = $_GET['ID'];
-        $sql = "SELECT title, year FROM songs where song_id =$passedID";
-        $result = $pdo->query($sql);
-        //run sql
-        //show on screen
-        while ($row = $result->fetch()) {
-            var_dump($row);
-        }
-
-        $pdo = null;
-    } catch (PDOException $e) {
-        die($e->getMessage());
-    }
+    require_once('includes/config.inc.php');
 } else {
-    header('Location: index.php');
+    header('Location: search.php');
 }
 ?>
 
@@ -48,8 +31,26 @@ if (!empty($_GET['ID'])) {
     </header>
 
     <h1>Song information</h1>
+    <?php
+    try {
+        $pdo = new PDO(DBCONNSTRING);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //write sql
+        $passedID = $_GET['ID'];
+        $sql = "SELECT title, year FROM songs where song_id =$passedID";
+        $result = $pdo->query($sql);
+        //run sql & dump on screen
+        while ($row = $result->fetch()) {
+            var_dump($row);
+        }
 
-    <footer>FOOTER</footer>
+        $pdo = null;
+    } catch (PDOException $e) {
+        die($e->getMessage());
+    }
+    ?>
+
+    <footer> <b> FOOTER </b> </footer>
 </body>
 
 </html>
