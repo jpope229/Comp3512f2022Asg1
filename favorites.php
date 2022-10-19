@@ -10,15 +10,15 @@
 
 <body>
     <header>
-        <div class="nav">
-            <a href="index.php">Home</a>
-            <a href="search.php">Search</a>
-            <a href="browse.php">Browse</a>
-            <a href="favorites.php">Favorites</a>
-        </div>
-
-        <h2>COMP 3512 ASG1<h2>
+        <h2>COMP 3512 ASG1<h2> <br>
                 <p>Justin Pope</p>
+
+                <div class="nav">
+                    <a href="index.php">Home</a>
+                    <a href="search.php">Search</a>
+                    <a href="browse.php">Browse</a>
+                    <a href="favorites.php">Favorites</a>
+                </div>
 
     </header>
 
