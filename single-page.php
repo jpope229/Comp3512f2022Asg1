@@ -31,11 +31,28 @@ if (!empty($_GET['ID'])) {
 </head>
 
 <body>
-    <header>HEADER</header>
+    <header>
+        <div class="nav">
+            <a href="index.php">Home</a>
+            <a href="search.php">Search</a>
+            <a href="browse.php">Browse</a>
+            <a href="favorites.php">Favorites</a>
+        </div>
 
-    <h1>Song information</h1>
+        <h2>COMP 3512 ASG1<h2> <br>
+                <p>Justin Pope</p>
 
-    <footer>FOOTER</footer>
+                <<<<<<< HEAD=======</header>
+
+                    <h1>Song information</h1>
+
+                    <?php
+                    $songID = $_GET['song_id'];
+                    echo "<h3>Song id = $_GET[song_id]</h3>";
+                    ?>
+
+                    >>>>>>> 1abc87bee84819fefd8533c3dfca8193ed55d787
+                    <footer>FOOTER</footer>
 </body>
 
 </html>
