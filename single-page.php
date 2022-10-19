@@ -1,9 +1,9 @@
 <?php require_once('includes/config.inc.php');
 
 if (!empty($_GET['ID'])) {
-    $pdo = new PDO('sqlite:.data/music.db');
 
     try {
+        $pdo = new PDO(DBCONNSTRING);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         //write sql
         $statement = $pdo->query("SELECT * FROM songs");
@@ -16,6 +16,8 @@ if (!empty($_GET['ID'])) {
     } catch (PDOException $e) {
         die($e->getMessage());
     }
+} else {
+    header('Location: index.php');
 }
 ?>
 
@@ -32,16 +34,14 @@ if (!empty($_GET['ID'])) {
 
 <body>
     <header>
-        <h2>COMP 3512 ASG1<h2> <br>
-                <p>Justin Pope</p>
-
+        <h2>COMP 3512 ASG1<h2>
+                <i>Justin Pope</i>
                 <div class="nav">
                     <a href="index.php">Home</a>
                     <a href="search.php">Search</a>
                     <a href="browse.php">Browse</a>
                     <a href="favorites.php">Favorites</a>
                 </div>
-
     </header>
 
     <h1>Song information</h1>
