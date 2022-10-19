@@ -1,4 +1,24 @@
-<?php require_once('includes/config.inc.php'); ?>
+<?php require_once('includes/config.inc.php');
+
+if (!empty($_GET['ID'])) {
+    $pdo = new PDO('sqlite:.data/music.db');
+
+    try {
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //write sql
+        $statement = $pdo->query("SELECT * FROM songs");
+        //run sql
+        $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+        //show on screen
+        var_dump($rows);
+
+        $pdo = null;
+    } catch (PDOException $e) {
+        die($e->getMessage());
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,19 +34,6 @@
     <header>HEADER</header>
 
     <h1>Song information</h1>
-
-    <?php
-    $pdo = new PDO('<sqlite:.data/music.db');
-
-    //write sql
-    $statement = $pdo->query("SELECT * FROM songs");
-
-    //run sql
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-    //show on screen
-    var_dump($rows);
-    ?>
 
     <footer>FOOTER</footer>
 </body>
