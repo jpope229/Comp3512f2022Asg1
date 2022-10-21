@@ -46,7 +46,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
             <th>View</th>
         </tr>
         <?php
-        if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['genre_select']) or !empty($_GET['yearL']) or !empty($_GET['yearG']) or !empty($_GET['popL']) or !empty($_GET['popG'])) {
+        if (empty($_GET['title']) && empty($_GET['artist_select']) && empty($_GET['genre_select']) && empty($_GET['yearL']) && empty($_GET['yearG']) && empty($_GET['popL']) && empty($_GET['popG'])) {
             try {
                 $pdo = new PDO(DBCONNSTRING);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -62,7 +62,6 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
                 die($e->getMessage());
             }
         }
-
         ?>
 
     </table>
