@@ -28,6 +28,7 @@
     <footer>
         <p>COMP3512<br>
             Justin Pope <a href='https://github.com/jpope229'>Github</a>
+            Hoomer Amid <a href='https://github.com/hamid269'>Github</a>
         </p>
     </footer>
 </body>
