@@ -1,3 +1,13 @@
+<?php
+
+if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['genre_select']) or !empty($_GET['yearL']) or !empty($_GET['yearG']) or !empty($_GET['popL']) or !empty($_GET['popG'])) {
+    require_once('includes/config.inc.php');
+} else {
+    //header('Location: search.php');
+    echo "TEST when No query string passed";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,6 +33,35 @@
     </header>
 
     <h1>Browse/Search Results</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th>Genre</th>
+            <th>Popularity</th>
+            <th>Add to Favorites</th>
+            <th>View</th>
+        </tr>
+        <?php
+        try {
+            $pdo = new PDO(DBCONNSTRING);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            //write sql
+            $sql = "SELECT title, year, artist_name, genre_name, popularity FROM songs INNER JOIN genres on songs.genre_id = genres.genre_id INNER JOIN artists on songs.artist_id = artists.artist_id";
+            $result = $pdo->query($sql);
+
+            foreach ($result as $row) {
+                echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><button type=" . "button" . ">Add to Favorites</button></td><td><button type=" . "button" . ">View</button></td></tr>";
+            }
+            $pdo = null;
+        } catch (PDOException $e) {
+            die($e->getMessage());
+        }
+
+        ?>
+
+    </table>
 
 
     <footer>
