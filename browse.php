@@ -4,7 +4,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
     require_once('includes/config.inc.php');
 } else {
     //header('Location: search.php');
-    echo "TEST when No query string passed";
+    echo "TEST Printed when No query string passed";
     require_once('includes/config.inc.php');
 }
 ?>
