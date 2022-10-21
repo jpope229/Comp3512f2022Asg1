@@ -5,6 +5,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
 } else {
     //header('Location: search.php');
     echo "TEST when No query string passed";
+    require_once('includes/config.inc.php');
 }
 ?>
 
