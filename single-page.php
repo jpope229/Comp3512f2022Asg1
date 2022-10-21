@@ -58,7 +58,7 @@ if (!empty($_GET['ID'])) {
 
     <footer>
         <p>COMP3512<br>
-            Justin Pope <a href='https://github.com/jpope229'>Github</a>
+            Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
             Hoomer Amid <a href='https://github.com/hamid269'>Github</a>
         </p>
     </footer>
