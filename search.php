@@ -57,7 +57,7 @@ try {
                     <option value='0'>Select Artist</option>
                     <?php
                     foreach ($artists as $a) {
-                        echo "<option value='" . $a['artist_id'] . "'>" . $a['artist_name'] . "</option>";
+                        echo "<option value='" . $a['artist_name'] . "'>" . $a['artist_name'] . "</option>";
                     }
                     ?>
                 </select><br>
@@ -68,7 +68,7 @@ try {
                     <option value='0'>Select Genre</option>
                     <?php
                     foreach ($genre as $g) {
-                        echo "<option value='" . $g['genre_id'] . "'>" . $g['genre_name'] . "</option>";
+                        echo "<option value='" . $g['genre_name'] . "'>" . $g['genre_name'] . "</option>";
                     }
                     ?>
                 </select><br>
