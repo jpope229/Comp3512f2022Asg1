@@ -12,7 +12,7 @@
 <body>
     <header>
         <h2>COMP 3512 ASG1<h2> <br>
-                <i>Justin Pope</i>
+                <sub>Justin Pope</sub>
 
                 <div class="nav">
                     <a href="index.php">Home</a>
@@ -22,6 +22,8 @@
                 </div>
 
     </header>
+
+    <h1>HOME PAGE</h1>
 
     <footer>
         <p>COMP3512<br>
