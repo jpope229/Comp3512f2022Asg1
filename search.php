@@ -25,7 +25,11 @@
     <h1>Search</h1>
 
 
-    <footer>FOOTER</footer>
+    <footer>
+        <p>COMP3512<br>
+            Justin Pope <a href='https://github.com/jpope229'>GitHub</a>
+        </p>
+    </footer>
 </body>
 
 </html>
