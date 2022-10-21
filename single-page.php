@@ -43,10 +43,10 @@ if (!empty($_GET['ID'])) {
         //run sql & print on screen
         foreach ($result as $row) {
             $duration = gmdate("i:s", $row[5]);
-            echo "<div><div class='row'>
-            <div class='column'>Song Title <br> Artist Name <br> Artist Type <br> Genre <br> Year <br> <Duration></div>
-            <div class='column'>$row[0]<br>$row[1]<br>$row[2]<br>$row[3]<br>$row[4]<br>duration $duration minutes<br></div>
-            </div>";
+            echo "<div><div class=" . "row" . ">
+            <div class=" . "column" . ">Song Title <br>Artist Name <br>Artist Type <br>Genre <br> Year <br>Duration</div>
+            <div class=" . "column" . ">$row[0]<br>$row[1]<br>$row[2]<br>$row[3]<br>$row[4]<br>$duration minutes</div>
+            </div><br>";
             echo "<sub>BPM $row[6] Energy $row[7] Danceability $row[8] Liveness $row[9] Valence $row[10] Acousticness $row[11] Speechiness $row[12] Popularity $row[13]</sub></div>";
         }
 
@@ -58,7 +58,7 @@ if (!empty($_GET['ID'])) {
 
     <footer>
         <p>COMP3512<br>
-            Justin Pope <a href='https://github.com/jpope229'>GitHub</a>
+            Justin Pope <a href='https://github.com/jpope229'>Github</a>
         </p>
     </footer>
 </body>

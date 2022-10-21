@@ -27,7 +27,7 @@
 
     <footer>
         <p>COMP3512<br>
-            Justin Pope <a href='https://github.com/jpope229'>GitHub</a>
+            Justin Pope <a href='https://github.com/jpope229'>Github</a>
         </p>
     </footer>
 </body>
