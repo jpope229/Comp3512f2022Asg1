@@ -2,10 +2,12 @@
 //Display all songs if no query string is passed (Coming from Nav)
 if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['genre_select']) or !empty($_GET['yearL']) or !empty($_GET['yearG']) or !empty($_GET['popL']) or !empty($_GET['popG'])) {
     require_once('includes/config.inc.php');
+    require_once('includes/queryString.inc.php');
 } else {
     //header('Location: search.php');
     echo "TEST Printed when No query string passed";
     require_once('includes/config.inc.php');
+    require_once('includes/queryString.inc.php');
 }
 ?>
 
@@ -45,6 +47,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
             <th>View</th>
         </tr>
         <?php
+
         //displays all songs if no query string is passed (Came to page from NAV not search)
         if (empty($_GET['title']) && empty($_GET['artist_select']) && empty($_GET['genre_select']) && empty($_GET['yearL']) && empty($_GET['yearG']) && empty($_GET['popL']) && empty($_GET['popG'])) {
             try {
@@ -61,8 +64,11 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
             } catch (PDOException $e) {
                 die($e->getMessage());
             }
+        } else {
+            displayFilteredList();
         }
         ?>
+
     </table>
 
 
