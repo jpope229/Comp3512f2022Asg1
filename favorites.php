@@ -29,6 +29,7 @@ session_start();
     </header>
 
     <h1>Favorites</h1>
+    <a href="removeFavorites.php">Remove all favorites</a><br>
     <table>
         <tr>
             <th>Title</th>
