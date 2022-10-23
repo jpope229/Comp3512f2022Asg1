@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if (!empty($_GET['ID'])) {
     require_once('includes/config.inc.php');
 } else {

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('includes/config.inc.php');
 try {
     $pdo = new PDO(DBCONNSTRING);

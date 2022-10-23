@@ -1,3 +1,9 @@
+<?php
+require_once('includes/config.inc.php');
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +29,38 @@
     </header>
 
     <h1>Favorites</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th>Genre</th>
+            <th>Popularity</th>
+            <th>Favorited</th>
+            <th>View</th>
+        </tr>
+        <?php
+        if (!empty($_SESSION['favorites'])) {
 
+            foreach ($_SESSION['favorites'] as $song => $id) {
+                try {
+                    $pdo = new PDO(DBCONNSTRING);
+                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    $sql = "SELECT title, year, artist_name, genre_name, popularity, song_id FROM songs INNER JOIN genres on songs.genre_id = genres.genre_id INNER JOIN artists on songs.artist_id = artists.artist_id where song_id =$id";
+                    $result = $pdo->query($sql);
+                    foreach ($result as $row) {
+                        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><a href=" . "removeFavorites.php?ID=$row[5]" . ">Remove</a></td><td><a href='single-page.php?ID=$row[5]'>View</a></td></tr>";
+                    }
+
+                    $pdo = null;
+                } catch (PDOException $e) {
+                    die($e->getMessage());
+                }
+            }
+        }
+        ?>
+
+    </table>
 
     <footer>
         <p>COMP3512<br>
