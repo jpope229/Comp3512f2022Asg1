@@ -16,6 +16,8 @@ if (in_array($song_ID, $_SESSION['favorites'])) {
         // Remove from array
         unset($_SESSION['favorites'][$removedID]);
     }
+} else { //remove all favorites condition is met
+    session_unset();
 }
 header("location: favorites.php")
 
