@@ -35,6 +35,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
     </header>
 
     <h1>Browse/Search Results</h1>
+    <a href="browse.php">Show All</a><br>
     <table>
         <tr>
             <th>Title</th>
