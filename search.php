@@ -31,6 +31,63 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Page</title>
     <link rel="stylesheet" href="css/search.css">
+    <style>
+       body {
+  background-image: url('images/icons8-team-7LNatQYMzm4-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  
+}
+h1 {
+    color: white;
+}
+    form label {
+    margin: 2px;
+    padding: 0px;
+    color: black;
+}
+input {
+ padding: 2px;
+ margin-left: 5px;
+ margin-bottom: 5px;
+  cursor: pointer;
+  height: 30%;
+  width: 40%;
+}
+.nav a {
+    background-color: black;
+    overflow: hidden;
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 20px;
+} 
+a:hover {
+    background-color: yellow;
+    color: black;
+}
+h2 {
+    text-align: center;
+}
+select {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+}
+</style>
 </head>
 
 <body>
