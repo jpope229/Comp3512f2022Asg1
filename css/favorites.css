@@ -1,7 +1,7 @@
 table,
 th,
 td {
-    border: 1px dashed red;
+    border: 3px solid red;
     border-collapse: collapse;
     padding: 2px;
 }
@@ -17,7 +17,7 @@ table {
 }
 
 body {
-    background-image: url('../images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background-image: url('../images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -32,6 +32,10 @@ form label {
     margin: 2px;
     padding: 0px;
     color: black;
+}
+
+td {
+    text-align: center;
 }
 
 .nav a {
@@ -54,12 +58,41 @@ h2 {
     text-align: center;
 }
 
+th {
+    background-color: lightgray;
+    color: #000000;
+    font-size: 120%;
+}
+
+.rmfav {
+    padding: 2px 5px;
+    background-color: pink;
+    color: black;
+    align-content: center;
+    margin: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.viewme {
+    padding: 2px 5px;
+    background-color: burlywood;
+    color: black;
+    align-content: center;
+    margin: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    padding: 5px;
     background: #000000;
     color: white;
-    width: 100%;
     text-align: center;
+    opacity: 0.5;
+    width: 100%;
+    margin-left: -8px;
 }

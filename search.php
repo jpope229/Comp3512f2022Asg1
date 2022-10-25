@@ -36,7 +36,7 @@ try {
 <body>
     <header>
         <h2>COMP 3512 ASG1<h2> <br>
-                <sub>Justin Pope</sub>
+                <sub>Justin Pope, Hoomer Amid</sub>
                 <div class="nav">
                     <a href="index.php">Home</a>
                     <a href="search.php">Search</a>
@@ -90,7 +90,7 @@ try {
         </div>
         <br>
         <input type="submit" value="Search">
-    </form>
+    </form> 
 
     <footer>
         <p>COMP3512<br>

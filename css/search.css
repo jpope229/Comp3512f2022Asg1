@@ -1,7 +1,6 @@
 body {
     background-image: url('../images/icons8-team-7LNatQYMzm4-unsplash.jpg');
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-size: 100%;
 }
 
@@ -50,14 +49,14 @@ select {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    padding: 0;
-    background: white;
-    color: black;
-    width: 100%;
+    background: #000000;
+    color: white;
     text-align: center;
     opacity: 0.5;
+    width: 100%;
+    margin-left: -8px;
 }
 
 .row {

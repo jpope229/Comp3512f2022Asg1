@@ -1,96 +1,128 @@
-/* spacing */
-
-table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid purple;
-}
-
-thead th:nth-child(1) {
-    width: 30%;
-}
-
-thead th:nth-child(2) {
-    width: 20%;
-}
-
-thead th:nth-child(3) {
-    width: 15%;
-}
-
-thead th:nth-child(4) {
-    width: 35%;
-}
-
-th,
-td {
-    padding: 20px;
-}
-
-table,
-th,
-td {
-    border: 1px dashed red;
-    border-collapse: collapse;
-    padding: 2px;
-}
-
-a {
-    color: white;
-}
-
-table {
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sty {
-    background-image: url('../images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-}
-
-h1,
-header h2 {
-    color: white;
-}
-
-form label {
-    margin: 2px;
-    padding: 0px;
-    color: black;
-}
-
-.nav a {
-    background-color: black;
-    overflow: hidden;
-    float: center;
-    color: white;
-    text-align: center;
-    padding: 6px 8px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-a:hover {
-    background-color: yellow;
-    color: black;
-}
-
-h2 {
-    text-align: center;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    padding: 5px;
-    background: #000000;
-    color: white;
-    width: 100%;
-    text-align: center;
-    opacity: 0.3;
-}
+    /* spacing */
+    
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid purple;
+    }
+    
+    thead th:nth-child(1) {
+        width: 30%;
+    }
+    
+    thead th:nth-child(2) {
+        width: 20%;
+    }
+    
+    thead th:nth-child(3) {
+        width: 15%;
+    }
+    
+    thead th:nth-child(4) {
+        width: 35%;
+    }
+    
+    th,
+    td {
+        padding: 20px;
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    td table,
+    th,
+    td {
+        border: 6px solid lightblue;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    table {
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    th {
+        background-color: lightgray;
+        color: #000000;
+        font-size: 120%;
+    }
+    
+    .sty {
+        background-image: url('../images/karl-hornfeldt-i4UcdpKoA9c-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    
+    h1,
+    header h2 {
+        color: black;
+    }
+    
+    form label {
+        margin: 2px;
+        padding: 0px;
+        color: black;
+    }
+    
+    .nav a {
+        background-color: black;
+        overflow: hidden;
+        float: center;
+        color: white;
+        text-align: center;
+        padding: 6px 8px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    a:hover {
+        background-color: yellow;
+        color: black;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .fav {
+        padding: 2px 5px;
+        background-color: pink;
+        color: black;
+        align-content: center;
+        margin: auto;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .viewme {
+        padding: 2px 5px;
+        background-color: burlywood;
+        color: black;
+        align-content: center;
+        margin: auto;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        background: #000000;
+        color: white;
+        text-align: center;
+        opacity: 0.5;
+        width: 100%;
+        margin-left: -8px;
+    }

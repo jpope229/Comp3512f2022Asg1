@@ -47,7 +47,7 @@ session_start();
                     $sql = "SELECT title, year, artist_name, genre_name, popularity, song_id FROM songs INNER JOIN genres on songs.genre_id = genres.genre_id INNER JOIN artists on songs.artist_id = artists.artist_id where song_id =$id";
                     $result = $pdo->query($sql);
                     foreach ($result as $row) {
-                        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><a href=" . "removeFavorites.php?ID=$row[5]" . ">Remove</a></td><td><a href='single-page.php?ID=$row[5]'>View</a></td></tr>";
+                        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><a class="."rmfav"." href=" . "removeFavorites.php?ID=$row[5]" . ">Remove</a></td><td><a class="."viewme"." href='single-page.php?ID=$row[5]'>View</a></td></tr>";
                     }
                     $pdo = null;
                 } catch (PDOException $e) {

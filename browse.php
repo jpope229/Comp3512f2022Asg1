@@ -21,8 +21,8 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
     <title>Browse Page</title>
 </head>
 
-<body>
-    <div class="sty">
+<body class="sty">
+    <div >
         <header>
             <h2>COMP 3512 ASG1<h2> <br>
                     <sub>Justin Pope, Hoomer Amid</sub>
@@ -55,12 +55,14 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
             }
             ?>
         </table>
-    </div>
+    
     <footer>
         <p>COMP3512<br>
             Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
             Hoomer Amid <a href='https://github.com/hamid269'>Github</a>
         </p>
     </footer>
+    </div>
+
 </body>
 </html>
