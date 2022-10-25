@@ -117,12 +117,12 @@
     }
     
     footer {
-        position: absolute;
+        position: static;
         bottom: 0;
         background: #000000;
         color: white;
         text-align: center;
         opacity: 0.5;
         width: 100%;
-        margin-left: -8px;
+        margin-left: 0px;
     }
