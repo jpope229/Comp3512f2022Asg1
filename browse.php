@@ -20,7 +20,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
     <title>Browse Page</title>
     <style>
         table, th, td {
-  border: 1px dashed red;
+  border: 2px solid red;
   border-collapse: collapse;
   padding: 2px;
   
