@@ -17,9 +17,6 @@ if (!empty($_GET['ID'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single song</title>
     <link rel="stylesheet" href="css/single-page.css">
-    <style>
-       
-</style>
 </head>
 
 <body>
@@ -53,7 +50,6 @@ if (!empty($_GET['ID'])) {
             </div><br>";
             echo "<sub>BPM $row[6] Energy $row[7] Danceability $row[8] Liveness $row[9] Valence $row[10] Acousticness $row[11] Speechiness $row[12] Popularity $row[13]</sub></div>";
         }
-
         $pdo = null;
     } catch (PDOException $e) {
         die($e->getMessage());
@@ -67,5 +63,4 @@ if (!empty($_GET['ID'])) {
         </p>
     </footer>
 </body>
-
 </html>

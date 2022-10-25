@@ -31,21 +31,18 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Page</title>
     <link rel="stylesheet" href="css/search.css">
-
 </head>
 
 <body>
     <header>
         <h2>COMP 3512 ASG1<h2> <br>
                 <sub>Justin Pope</sub>
-
                 <div class="nav">
                     <a href="index.php">Home</a>
                     <a href="search.php">Search</a>
                     <a href="browse.php">Browse</a>
                     <a href="favorites.php">Favorites</a>
                 </div>
-
     </header>
 
     <h1>Basic Song Search</h1>
@@ -93,9 +90,7 @@ try {
         </div>
         <br>
         <input type="submit" value="Search">
-
     </form>
-
 
     <footer>
         <p>COMP3512<br>
@@ -104,5 +99,4 @@ try {
         </p>
     </footer>
 </body>
-
 </html>

@@ -1,8 +1,6 @@
 <?php
 require_once('includes/config.inc.php');
 session_start();
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,23 +10,19 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/favorites.css">
-
     <title>Favorites page</title>
-    
 </head>
 
 <body>
     <header>
         <h2>COMP 3512 ASG1<h2> <br>
                 <sub>Justin Pope, Hoomer Amid</sub>
-
                 <div class="nav">
                     <a href="index.php">Home</a>
                     <a href="search.php">Search</a>
                     <a href="browse.php">Browse</a>
                     <a href="favorites.php">Favorites</a>
                 </div>
-
     </header>
 
     <h1>Favorites</h1>
@@ -55,7 +49,6 @@ session_start();
                     foreach ($result as $row) {
                         echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><a href=" . "removeFavorites.php?ID=$row[5]" . ">Remove</a></td><td><a href='single-page.php?ID=$row[5]'>View</a></td></tr>";
                     }
-
                     $pdo = null;
                 } catch (PDOException $e) {
                     die($e->getMessage());
@@ -63,7 +56,6 @@ session_start();
             }
         }
         ?>
-
     </table>
 
     <footer>
@@ -73,5 +65,4 @@ session_start();
         </p>
     </footer>
 </body>
-
 </html>

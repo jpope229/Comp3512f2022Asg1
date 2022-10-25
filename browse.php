@@ -19,7 +19,6 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/browse.css">
     <title>Browse Page</title>
-    
 </head>
 
 <body>
@@ -27,14 +26,12 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
         <header>
             <h2>COMP 3512 ASG1<h2> <br>
                     <sub>Justin Pope, Hoomer Amid</sub>
-
                     <div class="nav">
                         <a href="index.php">Home</a>
                         <a href="search.php">Search</a>
                         <a href="browse.php">Browse</a>
                         <a href="favorites.php">Favorites</a>
                     </div>
-
         </header>
 
         <h1>Browse/Search Results</h1>
@@ -50,7 +47,6 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
                 <th>View</th>
             </tr>
             <?php
-
             //displays all songs if no query string is passed (Came to page from NAV not search)
             if (empty($_GET['title']) && empty($_GET['artist_select']) && empty($_GET['genre_select']) && empty($_GET['yearL']) && empty($_GET['yearG']) && empty($_GET['popL']) && empty($_GET['popG'])) {
                 displayAllsongs();
@@ -58,9 +54,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
                 displayFilteredList();
             }
             ?>
-
         </table>
-
     </div>
     <footer>
         <p>COMP3512<br>
@@ -69,5 +63,4 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
         </p>
     </footer>
 </body>
-
 </html>
