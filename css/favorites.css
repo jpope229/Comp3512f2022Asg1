@@ -36,10 +36,10 @@ form label {
 
 td {
     text-align: center;
-        background-color: white;
-        opacity: 85%;
-        font-weight: bolder;
-        color: black;
+    background-color: white;
+    opacity: 85%;
+    font-weight: bolder;
+    color: black;
 }
 
 .nav a {
@@ -103,35 +103,43 @@ footer {
     margin-left: -8px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     background-color: black;
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
+}
+
+a:hover,
+a:active {
     background-color: green;
-  }
-  a.rmfav:hover, a.rmfav:active {
+}
+
+a.rmfav:hover,
+a.rmfav:active {
     background-color: red;
-  }
+}
 
-  a.viewme:hover, a.viewme:active {
+a.viewme:hover,
+a.viewme:active {
     background-color: blue;
-  }
+}
 
-  footer a:link, footer a:visited {
+footer a:link,
+footer a:visited {
     background-color: black;
     color: white;
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
- footer a:hover, footer a:active {
+}
+
+footer a:hover,
+footer a:active {
     background-color: lightblue;
-  }
+    color: black;
+}

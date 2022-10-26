@@ -7,8 +7,9 @@ body {
 h1 {
     color: black;
     font-size: xx-large;
-    background-color: gray;
+    background-color: white;
     margin-bottom: -1px;
+    text-align: center;
 }
 
 form label {
@@ -27,7 +28,6 @@ input {
 }
 
 .nav a {
-    background-color: black;
     overflow: hidden;
     float: center;
     color: white;
@@ -38,8 +38,8 @@ input {
     border-radius: 15px;
 }
 
-
 h2 {
+    color: white;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ select {
 }
 
 footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     background: #000000;
     color: white;
@@ -67,38 +67,48 @@ footer {
     flex: 50%;
 }
 
-div.headerName{
+div.headerName {
     padding-bottom: 10px;
     margin-bottom: 10px;
-
 }
-a:link, a:visited {
+
+a:link,
+a:visited {
     background-color: black;
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: green;
-  }
+}
 
-  footer a:link, footer a:visited {
+a:hover,
+a:active {
+    background-color: green;
+}
+
+footer a:link,
+footer a:visited {
     background-color: black;
     color: white;
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
- footer a:hover, footer a:active {
-    background-color: lightblue;
-  }
+}
 
-  form{
+footer a:hover,
+footer a:active {
+    background-color: lightblue;
+    color: black;
+}
+
+form {
     background-color: lightgray;
     opacity: 85%;
-  }
+}
+
+#submit:hover {
+    color: white;
+    background-color: green;
+}

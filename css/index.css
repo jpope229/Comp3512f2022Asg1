@@ -24,9 +24,10 @@ h1 {
     color: white;
 }
 
-a.active{
+a.active {
     background-color: green;
 }
+
 .nav a {
     background-color: black;
     overflow: hidden;
@@ -82,14 +83,16 @@ footer a:visited {
 footer a:hover,
 footer a:active {
     background-color: lightblue;
+    color: black;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #2196F3;
+    background-color: darkolivegreen;
     padding: 5px;
     justify-content: space-evenly;
+    border-radius: 12px;
 }
 
 .grid-item {
@@ -99,6 +102,8 @@ footer a:active {
     font-size: 15px;
     text-align: center;
     margin: 6px;
+    border-radius: 12px;
+    align-content: center;
 }
 
 .grid-item li {

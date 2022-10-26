@@ -92,7 +92,7 @@ try {
             </div>
         </div>
         <br>
-        <input type="submit" value="Search">
+        <input type="submit" value="Search" id="submit">
     </form>
 
     <footer>

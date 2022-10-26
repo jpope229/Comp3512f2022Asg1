@@ -4,6 +4,8 @@
     margin-right: auto;
     display: flex;
     justify-content: center;
+    background-image: url('../images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg');
+    background-repeat: no-repeat;
 }
 
 body {
@@ -36,7 +38,6 @@ form label {
     border-radius: 15px;
 }
 
-
 h2 {
     text-align: center;
 }
@@ -59,44 +60,54 @@ footer {
 .column {
     flex: 50%;
 }
-a:link, a:visited {
+
+a:link,
+a:visited {
     background-color: black;
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
+}
+
+a:hover,
+a:active {
     background-color: green;
-  }
-  footer a:link, footer a:visited {
+}
+
+footer a:link,
+footer a:visited {
     background-color: black;
     color: white;
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
- footer a:hover, footer a:active {
+}
+
+footer a:hover,
+footer a:active {
     background-color: lightblue;
-  }
+    color: black;
+}
 
-  .column{
+.column {
     text-align: left;
-  }
-/*single song page row information*/
-  b {
-    font-size: larger;
-  }
+}
 
-  h4 {
+
+/*single song page row information*/
+
+b {
+    font-size: larger;
+}
+
+h4 {
     text-align: center;
     align-items: center;
-  }
+}
 
-  e{
+e {
     font-size: small;
-  }
+}
