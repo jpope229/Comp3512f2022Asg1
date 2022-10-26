@@ -174,6 +174,6 @@ function generateHeader()
     if (!empty($_GET['title']) || !empty($_GET['artist_select']) || !empty($_GET['genre_select']) || !empty($_GET['yearL']) || !empty($_GET['yearG']) || !empty($_GET['popL']) || !empty($_GET['popG'])) {
         echo "<h1>Search Results</h1>";
     } else {
-        echo "<h1>Browse Songs</h1>";
+        echo "<h1>Browse All Songs</h1>";
     }
 }
