@@ -138,33 +138,42 @@ function returnSearchFilter()
 {
     $searchFilters = " ";
     if (!empty($_GET['title'])) {
-        $searchFilters = "Showing results for songs titled " . $_GET['title'] . " ";
+        $searchFilters = "Displaying results for songs titled " . $_GET['title'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
 
     if (!empty($_GET['artist_select'])) {
-        $searchFilters = "Showing results songs by artist " . $_GET['artist_select'] . " ";
+        $searchFilters = "Displaying results songs by artist " . $_GET['artist_select'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
 
     if (!empty($_GET['genre_select'])) {
-        $searchFilters = "Showing results for " . $_GET['genre_select'] . " songs";
+        $searchFilters = "Displaying results for " . $_GET['genre_select'] . " songs";
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['yearL'])) {
-        $searchFilters = "Showing results for songs released before the year " . $_GET['yearL'] . " ";
+        $searchFilters = "Displaying results for songs released before the year " . $_GET['yearL'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['yearG'])) {
-        $searchFilters = "Showing results for songs released after the year " . $_GET['yearG'] . " ";
+        $searchFilters = "Displaying results for songs released after the year " . $_GET['yearG'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['popL'])) {
-        $searchFilters = "Showing results for songs with a popularity score below " . $_GET['popL'] . " ";
+        $searchFilters = "Displaying results for songs with a popularity score below " . $_GET['popL'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['popG'])) {
-        $searchFilters = "Showing results for songs with a popularity score above " . $_GET['popG'] . " ";
+        $searchFilters = "Displaying results for songs with a popularity score above " . $_GET['popG'] . " ";
         echo "<h1>$searchFilters</h1>";
+    }
+}
+
+function generateHeader()
+{
+    if (!empty($_GET['title']) || !empty($_GET['artist_select']) || !empty($_GET['genre_select']) || !empty($_GET['yearL']) || !empty($_GET['yearG']) || !empty($_GET['popL']) || !empty($_GET['popG'])) {
+        echo "<h1>Search Results</h1>";
+    } else {
+        echo "<h1>Browse Songs</h1>";
     }
 }
