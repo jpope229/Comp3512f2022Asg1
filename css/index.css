@@ -18,6 +18,7 @@ body {
 .headerName a:hover,
 .headerName a:active {
     background-color: lightblue;
+    color: #000000;
 }
 
 h1 {
@@ -106,8 +107,14 @@ footer a:active {
     align-content: center;
 }
 
-.grid-item h3 {}
+.grid-item h3 {
+    background-color: yellow;
+    border-radius: 40px;
+}
 
 .grid-item li {
     list-style-type: none;
+    margin-right: 15px;
+    padding: 10px;
+    align-items: center;
 }
