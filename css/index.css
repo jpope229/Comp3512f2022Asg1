@@ -5,7 +5,7 @@ form label {
 }
 
 body {
-    background-image: url('images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background-image: url('../images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -40,13 +40,14 @@ footer {
     color: white;
     width: 100%;
     text-align: center;
+    opacity: 80%;
 }
 
 div.headerName{
     padding-bottom: 10px;
 
 }
-a:link, a:visited {
+div.nav a:link, div.nav a:visited {
     background-color: black;
     color: white;
     padding: 14px 25px;
@@ -55,6 +56,19 @@ a:link, a:visited {
     display: inline-block;
   }
   
-  a:hover, a:active {
+ div.nav a:hover, nav a:active {
     background-color: green;
+  }
+
+  footer a:link, footer a:visited {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+ footer a:hover, footer a:active {
+    background-color: lightblue;
   }

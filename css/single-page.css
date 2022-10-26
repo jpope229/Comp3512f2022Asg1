@@ -47,6 +47,7 @@ footer {
     color: white;
     width: 100%;
     text-align: center;
+    opacity: 80%;
 }
 
 .row {
@@ -67,4 +68,16 @@ a:link, a:visited {
   
   a:hover, a:active {
     background-color: green;
+  }
+  footer a:link, footer a:visited {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+ footer a:hover, footer a:active {
+    background-color: lightblue;
   }

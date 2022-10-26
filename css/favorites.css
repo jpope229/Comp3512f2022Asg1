@@ -96,7 +96,7 @@ footer {
     background: #000000;
     color: white;
     text-align: center;
-    opacity: 0.5;
+    opacity: 80%;
     width: 100%;
     margin-left: -8px;
 }
@@ -112,4 +112,17 @@ a:link, a:visited {
   
   a:hover, a:active {
     background-color: green;
+  }
+
+  footer a:link, footer a:visited {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+ footer a:hover, footer a:active {
+    background-color: lightblue;
   }
