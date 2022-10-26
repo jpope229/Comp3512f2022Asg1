@@ -15,18 +15,21 @@ session_start();
 
 <body>
     <header>
-        <h2>COMP 3512 ASG1<h2> <br>
-                <sub>Justin Pope, Hoomer Amid</sub>
-                <div class="nav">
-                    <a href="index.php">Home</a>
-                    <a href="search.php">Search</a>
-                    <a href="browse.php">Browse</a>
-                    <a href="favorites.php">Favorites</a>
-                </div>
+        <div class="headerName">
+            <h2>COMP 3512 Assign1<h2> <br>
+                    Justin Pope<br>
+                    Hoomer Amid<br>
+        </div>
+        <div class="nav">
+            <a href="index.php">Home</a>
+            <a href="search.php">Search</a>
+            <a href="browse.php">Browse</a>
+            <a href="favorites.php">Favorites</a>
+        </div>
     </header>
 
     <h1>Favorites</h1>
-    <a href="removeFavorites.php">Remove all favorites</a><br>
+    <a href="includes/removeFavorites.inc.php">Remove all favorites</a><br>
     <table>
         <tr>
             <th>Title</th>
@@ -47,7 +50,7 @@ session_start();
                     $sql = "SELECT title, year, artist_name, genre_name, popularity, song_id FROM songs INNER JOIN genres on songs.genre_id = genres.genre_id INNER JOIN artists on songs.artist_id = artists.artist_id where song_id =$id";
                     $result = $pdo->query($sql);
                     foreach ($result as $row) {
-                        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><a class="."rmfav"." href=" . "removeFavorites.php?ID=$row[5]" . ">Remove</a></td><td><a class="."viewme"." href='single-page.php?ID=$row[5]'>View</a></td></tr>";
+                        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td><a class=" . "rmfav" . " href=" . "includes/removeFavorites.inc.php?ID=$row[5]" . ">Remove</a></td><td><a class=" . "viewme" . " href='single-page.php?ID=$row[5]'>View</a></td></tr>";
                     }
                     $pdo = null;
                 } catch (PDOException $e) {
@@ -60,9 +63,13 @@ session_start();
 
     <footer>
         <p>COMP3512<br>
+            <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
+        <div class="Names">Contributors:<br>
             Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
-            Hoomer Amid <a href='https://github.com/hamid269'>Github</a>
+            Hoomer Amid <a href='https://github.com/hamid269'>Github</a><br>
+        </div>
         </p>
     </footer>
 </body>
+
 </html>

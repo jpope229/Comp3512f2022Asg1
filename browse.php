@@ -22,20 +22,23 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
 </head>
 
 <body class="sty">
-    <div >
+    <div>
         <header>
-            <h2>COMP 3512 ASG1<h2> <br>
-                    <sub>Justin Pope, Hoomer Amid</sub>
-                    <div class="nav">
-                        <a href="index.php">Home</a>
-                        <a href="search.php">Search</a>
-                        <a href="browse.php">Browse</a>
-                        <a href="favorites.php">Favorites</a>
-                    </div>
+            <div class="headerName">
+                <h2>COMP 3512 Assign1<h2> <br>
+                        Justin Pope<br>
+                        Hoomer Amid<br>
+            </div>
+            <div class="nav">
+                <a href="index.php">Home</a>
+                <a href="search.php">Search</a>
+                <a href="browse.php">Browse</a>
+                <a href="favorites.php">Favorites</a>
+            </div>
         </header>
 
         <h1>Browse/Search Results</h1>
-        <a href="browse.php">Show All</a><br>
+        <a href="browse.php" class="showAllButton">Show All</a><br>
         <table>
             <tr>
                 <th>Title</th>
@@ -55,14 +58,18 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
             }
             ?>
         </table>
-    
-    <footer>
-        <p>COMP3512<br>
-            Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
-            Hoomer Amid <a href='https://github.com/hamid269'>Github</a>
-        </p>
-    </footer>
+
+        <footer>
+            <p>COMP3512<br>
+                <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
+            <div class="Names">Contributors:<br>
+                Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
+                Hoomer Amid <a href='https://github.com/hamid269'>Github</a><br>
+            </div>
+            </p>
+        </footer>
     </div>
 
 </body>
+
 </html>

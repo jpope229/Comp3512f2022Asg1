@@ -19,7 +19,7 @@ if (in_array($song_ID, $_SESSION['favorites'])) {
 } else { //remove all favorites condition is met
     session_unset();
 }
-header("location: favorites.php")
+header("location: ../favorites.php")
 
 ?>
 <!DOCTYPE html>

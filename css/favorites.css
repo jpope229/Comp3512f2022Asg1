@@ -1,9 +1,9 @@
 table,
 th,
 td {
-    border: 3px solid red;
+    border: 10px solid darkgray;
     border-collapse: collapse;
-    padding: 2px;
+    padding: 5px;
 }
 
 a {
@@ -36,6 +36,10 @@ form label {
 
 td {
     text-align: center;
+        background-color: white;
+        opacity: 85%;
+        font-weight: bolder;
+        color: black;
 }
 
 .nav a {
@@ -92,7 +96,33 @@ footer {
     background: #000000;
     color: white;
     text-align: center;
-    opacity: 0.5;
+    opacity: 80%;
     width: 100%;
     margin-left: -8px;
 }
+
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+  }
+
+  footer a:link, footer a:visited {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+ footer a:hover, footer a:active {
+    background-color: lightblue;
+  }
