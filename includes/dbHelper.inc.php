@@ -116,7 +116,7 @@ function generateAtTheClub()
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>At the Club</h3><ul>";
         foreach ($result as $row) {
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Club Rating: $row[4]</li>";
+            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Club Rating: round($row[4])</li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -135,7 +135,7 @@ function generateRunningSongs()
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>Running</h3><ul>";
         foreach ($result as $row) {
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Run Score: $row[4]</li>";
+            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Run Score: round($row[4])</li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -154,7 +154,7 @@ function generateStudyingSongs()
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>Studying</h3><ul>";
         foreach ($result as $row) {
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Study Score: $row[5]</li>";
+            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Study Score: round($row[5])</li>";
         }
         echo "</ul></div>";
         $pdo = null;
