@@ -133,3 +133,38 @@ function displayFilteredList()
         }
     }
 }
+
+function returnSearchFilter()
+{
+    $searchFilters = " ";
+    if (!empty($_GET['title'])) {
+        $searchFilters = "Showing results for songs titled " . $_GET['title'] . " ";
+        echo "<h1>$searchFilters</h1>";
+    }
+
+    if (!empty($_GET['artist_select'])) {
+        $searchFilters = "Showing results songs by " . $_GET['artist_select'] . " ";
+        echo "<h1>$searchFilters</h1>";
+    }
+
+    if (!empty($_GET['genre_select'])) {
+        $searchFilters = "Showing results for " . $_GET['title'] . " genre of songs";
+        echo "<h1>$searchFilters</h1>";
+    }
+    if (!empty($_GET['yearL'])) {
+        $searchFilters = "Showing results for songs released before the year " . $_GET['yearL'] . " ";
+        echo "<h1>$searchFilters</h1>";
+    }
+    if (!empty($_GET['popG'])) {
+        $searchFilters = "Showing results for songs released after " . $_GET['yearG'] . " ";
+        echo "<h1>$searchFilters</h1>";
+    }
+    if (!empty($_GET['popL'])) {
+        $searchFilters = "Showing results for songs with a popularity score below " . $_GET['popL'] . " ";
+        echo "<h1>$searchFilters</h1>";
+    }
+    if (!empty($_GET['popG'])) {
+        $searchFilters = "Showing results for songs with a popularity score above " . $_GET['popG'] . " ";
+        echo "<h1>$searchFilters</h1>";
+    }
+}
