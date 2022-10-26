@@ -21,7 +21,7 @@ if (!empty($_GET['ID'])) {
 
 <body>
     <header>
-        <h2>COMP 3512 ASG1<h2>
+        <h2>COMP 3512 Assign1<h2>
                 <sub>Justin Pope, Hoomer Amid</sub>
                 <div class="nav">
                     <a href="index.php">Home</a>
