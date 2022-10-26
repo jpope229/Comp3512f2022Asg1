@@ -10,7 +10,7 @@ if (!isset($_SESSION['favorites'])) {
 if (!in_array($song_ID, $_SESSION['favorites'])) {
     array_push($_SESSION['favorites'], $song_ID);
 }
-header("location: favorites.php")
+header("location: ../favorites.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
