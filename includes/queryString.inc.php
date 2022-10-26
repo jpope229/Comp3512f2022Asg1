@@ -156,7 +156,7 @@ function returnSearchFilter()
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['yearG'])) {
-        $searchFilters = "Showing results for songs released after " . $_GET['yearG'] . " ";
+        $searchFilters = "Showing results for songs released after the year " . $_GET['yearG'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['popL'])) {
