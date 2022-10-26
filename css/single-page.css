@@ -25,7 +25,6 @@ form label {
 }
 
 .nav a {
-    background-color: black;
     overflow: hidden;
     float: center;
     color: white;
@@ -35,10 +34,6 @@ form label {
     font-size: 20px;
 }
 
-a:hover {
-    background-color: yellow;
-    color: black;
-}
 
 h2 {
     text-align: center;
@@ -61,3 +56,15 @@ footer {
 .column {
     flex: 50%;
 }
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+  }

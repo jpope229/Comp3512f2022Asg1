@@ -26,10 +26,7 @@ h1 {
     font-size: 20px;
 }
 
-a:hover {
-    background-color: yellow;
-    color: black;
-}
+
 
 h2 {
     text-align: center;
@@ -49,3 +46,15 @@ div.headerName{
     padding-bottom: 10px;
 
 }
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+  }

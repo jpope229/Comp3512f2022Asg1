@@ -30,14 +30,18 @@
     
     td {
         text-align: center;
+        background-color: white;
+        opacity: 85%;
+        font-weight: bolder;
+        border: 10px solid darkgray;
     }
     
     td table,
     th,
     td {
-        border: 6px solid lightblue;
         border-collapse: collapse;
         padding: 2px;
+        border: 10px solid darkgray;
     }
     
     a {
@@ -126,3 +130,15 @@
         width: 100%;
         margin-left: 0px;
     }
+    a:link, a:visited {
+        background-color: black;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: green;
+      }
