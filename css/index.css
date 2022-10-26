@@ -11,6 +11,18 @@ body {
     background-size: cover;
 }
 
+.headerName a:link, .headerName a:visited {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+ .headerName a:hover, .headerName a:active {
+    background-color: lightblue;
+  }
 h1 {
     color: white;
 }
@@ -43,10 +55,7 @@ footer {
     opacity: 80%;
 }
 
-div.headerName{
-    padding-bottom: 10px;
 
-}
 div.nav a:link, div.nav a:visited {
     background-color: black;
     color: white;

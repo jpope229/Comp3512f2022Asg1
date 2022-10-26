@@ -18,8 +18,11 @@ require_once('includes/dbHelper.inc.php');
     <header>
         <div class="headerName">
             <h2>COMP 3512 Assign1<h2> <br>
-                    Justin Pope<br>
-                    Hoomer Amid<br>
+                    <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
+                    <div class="Names">Contributors:<br>
+                        Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
+                        Hoomer Amid <a href='https://github.com/hamid269'>Github</a><br>
+                    </div>
         </div>
         <div class="nav">
             <a href="index.php">Home</a>
