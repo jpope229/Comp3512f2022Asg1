@@ -143,7 +143,7 @@ function returnSearchFilter()
     }
 
     if (!empty($_GET['artist_select'])) {
-        $searchFilters = "Displaying results songs by artist " . $_GET['artist_select'] . " ";
+        $searchFilters = "Displaying results for songs by " . $_GET['artist_select'] . " ";
         echo "<h1>$searchFilters</h1>";
     }
 
