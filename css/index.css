@@ -89,7 +89,7 @@ footer a:active {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: darkolivegreen;
+    background-color: grey;
     padding: 5px;
     justify-content: space-evenly;
     border-radius: 12px;
@@ -105,6 +105,8 @@ footer a:active {
     border-radius: 12px;
     align-content: center;
 }
+
+.grid-item h3 {}
 
 .grid-item li {
     list-style-type: none;

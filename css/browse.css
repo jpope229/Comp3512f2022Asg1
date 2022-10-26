@@ -61,15 +61,27 @@
     }
     
     .sty {
-        background-image: url('../images/karl-hornfeldt-i4UcdpKoA9c-unsplash.jpg');
+        background-image: url('../images/annie-theby-EXCeGbyolPY-unsplash.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100%;
     }
     
-    h1,
-    header h2 {
-        color: black;
+    .headerName {
+        color: white;
+        background-color: dimgrey;
+        border-radius: 12px;
+        text-align: center;
+        display: fixed;
+        opacity: 70%;
+    }
+    
+    h1 {
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 20%;
+        border-radius: 4px;
     }
     
     form label {
