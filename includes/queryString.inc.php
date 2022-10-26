@@ -148,7 +148,7 @@ function returnSearchFilter()
     }
 
     if (!empty($_GET['genre_select'])) {
-        $searchFilters = "Showing results for " . $_GET['title'] . " genre of songs";
+        $searchFilters = "Showing results for " . $_GET['genre_select'] . " songs";
         echo "<h1>$searchFilters</h1>";
     }
     if (!empty($_GET['yearL'])) {

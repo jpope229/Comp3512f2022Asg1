@@ -51,7 +51,7 @@ if (!empty($_GET['ID'])) {
             <div class=" . "column" . ">Song Title <br>Artist Name <br>Artist Type <br>Genre <br> Year <br>Duration</div>
             <div class=" . "column" . ">$row[0]<br>$row[1]<br>$row[2]<br>$row[3]<br>$row[4]<br>$duration minutes</div>
             </div><br>";
-                echo "<sub>BPM $row[6] Energy $row[7] Danceability $row[8] Liveness $row[9] Valence $row[10] Acousticness $row[11] Speechiness $row[12] Popularity $row[13]</sub></div>";
+                echo "<sub>BPM $row[6] - Energy $row[7] - Danceability $row[8] - Liveness $row[9] - Valence $row[10] - Acousticness $row[11] - Speechiness $row[12] - Popularity $row[13]</sub></div>";
             }
             $pdo = null;
         } catch (PDOException $e) {
