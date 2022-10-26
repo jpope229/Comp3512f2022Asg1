@@ -133,7 +133,7 @@ function generateRunningSongs()
         $pdo = new PDO(DBCONNSTRING);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result = $pdo->query($sql);
-        echo "<div class=" . "grid-item" . "><h3>Running Songs</h3><ul>";
+        echo "<div class=" . "grid-item" . "><h3>Running</h3><ul>";
         foreach ($result as $row) {
             echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Run Score: $row[4]</li>";
         }
@@ -152,7 +152,7 @@ function generateStudyingSongs()
         $pdo = new PDO(DBCONNSTRING);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result = $pdo->query($sql);
-        echo "<div class=" . "grid-item" . "><h3>Studying Songs</h3><ul>";
+        echo "<div class=" . "grid-item" . "><h3>Studying</h3><ul>";
         foreach ($result as $row) {
             echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Study Score: $row[5]</li>";
         }
