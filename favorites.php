@@ -24,12 +24,12 @@ session_start();
             <a href="index.php">Home</a>
             <a href="search.php">Search</a>
             <a href="browse.php">Browse</a>
-            <a href="favorites.php">Favorites</a>
+            <a class="active" href="favorites.php">Favorites</a>
         </div>
     </header>
 
     <h1>Favorites</h1>
-    <a href="includes/removeFavorites.inc.php">Remove all favorites</a><br>
+    <a class="rmfav" href="includes/removeFavorites.inc.php">Remove all favorites</a><br>
     <table>
         <tr>
             <th>Title</th>

@@ -42,7 +42,7 @@ try {
         </div>
         <div class="nav">
             <a href="index.php">Home</a>
-            <a href="search.php">Search</a>
+            <a class="active" href="search.php">Search</a>
             <a href="browse.php">Browse</a>
             <a href="favorites.php">Favorites</a>
         </div>

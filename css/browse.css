@@ -84,9 +84,10 @@
         float: center;
         color: white;
         text-align: center;
-        padding: 6px 8px;
+        padding: 10px 20px;
         text-decoration: none;
         font-size: 20px;
+        border-radius: 15px;
     }
     
     a:hover {

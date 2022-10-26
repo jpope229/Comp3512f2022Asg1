@@ -48,9 +48,10 @@ td {
     float: center;
     color: white;
     text-align: center;
-    padding: 6px 8px;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 20px;
+    border-radius: 15px;
 }
 
 a:hover {
@@ -112,6 +113,13 @@ a:link, a:visited {
   
   a:hover, a:active {
     background-color: green;
+  }
+  a.rmfav:hover, a.rmfav:active {
+    background-color: red;
+  }
+
+  a.viewme:hover, a.viewme:active {
+    background-color: blue;
   }
 
   footer a:link, footer a:visited {

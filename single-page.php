@@ -22,9 +22,9 @@ if (!empty($_GET['ID'])) {
 <body>
     <header>
         <div class="headerName">
-            <h2>COMP 3512 Assign1<h2> <br>
-                    Justin Pope<br>
-                    Hoomer Amid<br>
+            <h2>COMP 3512 Assign1<h2><br>
+                    <e>Justin Pope<e><br>
+                            <e>Hoomer Amid<e><br>
         </div>
         <div class="nav">
             <a href="index.php">Home</a>

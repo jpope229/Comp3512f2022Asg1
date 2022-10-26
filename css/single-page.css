@@ -25,13 +25,15 @@ form label {
 }
 
 .nav a {
+    background-color: black;
     overflow: hidden;
     float: center;
     color: white;
     text-align: center;
-    padding: 6px 8px;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 20px;
+    border-radius: 15px;
 }
 
 
@@ -93,4 +95,8 @@ a:link, a:visited {
   h4 {
     text-align: center;
     align-items: center;
+  }
+
+  e{
+    font-size: small;
   }

@@ -32,7 +32,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
             <div class="nav">
                 <a href="index.php">Home</a>
                 <a href="search.php">Search</a>
-                <a href="browse.php">Browse</a>
+                <a class="active" href="browse.php">Browse</a>
                 <a href="favorites.php">Favorites</a>
             </div>
         </header>
