@@ -109,7 +109,7 @@ footer a:active {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 5px;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     margin: 6px;
     border-radius: 12px;
     align-content: center;
@@ -118,11 +118,33 @@ footer a:active {
 .grid-item h3 {
     background-color: lightgrey;
     border-radius: 40px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bolder;
 }
 
 .grid-item li {
     list-style-type: none;
     margin-right: 15px;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
+}
+
+div.grid-item a, div.grid-item a:hover{
+    color:  green;
+    font-size: larger;
+    text-decoration: none; 
+    font-weight: bold;
+
+
+}
+
+div.grid-item a:hover{
+    color:  blue;
+    text-decoration: none; 
+}
+
+div.grid-item a:active{
+    color: blueviolet;
+    text-decoration: none; 
 }

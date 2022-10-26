@@ -17,7 +17,7 @@ require_once('includes/dbHelper.inc.php');
 <body>
     <header>
         <div class="headerName">
-            <h2>COMP 3512 Assign1<h2> <br>
+            <h1>COMP 3512 Assign1<h1> <br>
                     <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
                     <div class="Names">Contributors:<br>
                         <a href='https://github.com/jpope229'>Justin Pope</a><br>

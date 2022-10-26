@@ -15,8 +15,10 @@ Limit 10";
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>Top Genres</h3><ul>";
+        $position = 1;
         foreach ($result as $row) {
-            echo "<li>$row[1] - $row[2] Songs</li>";
+            echo "<li>$position.<b>$row[1]</b><br>$row[2] Songs</li>";
+            $position++;
         }
         echo "</ul></div>";
         $pdo = null;
@@ -35,7 +37,7 @@ function generateTopArtists()
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>Top Artists</h3><ul>";
         foreach ($result as $row) {
-            echo "<li>$row[1] - $row[2] Songs</li>";
+            echo "<li><b>$row[1]</b> <br> $row[2] Songs</li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -53,13 +55,13 @@ function generateTopSongs()
         $pdo = new PDO(DBCONNSTRING);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result = $pdo->query($sql);
-        echo "<div class=" . "grid-item" . "><h3>Most Popular Songs</h3><ol>";
+        echo "<div class=" . "grid-item" . "><h3>Most Popular Songs</h3><ul>";
         $position = 1;
         foreach ($result as $row) {
-            echo "<li>$position - $row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a></li>";
+            echo "<li>$position. <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> <br><b>$row[2]</b></li>";
             $position++;
         }
-        echo "</ol></div>";
+        echo "</ul></div>";
         $pdo = null;
     } catch (PDOException $e) {
         die($e->getMessage());
@@ -76,7 +78,7 @@ function generateOneHitWonders()
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>One Hit Wonders</h3><ul>";
         foreach ($result as $row) {
-            echo "<li><a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - $row[2]</li>";
+            echo "<li><a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> <br> <b>$row[2]</b></li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -96,7 +98,7 @@ function generateLongestAcousticSongs()
         echo "<div class=" . "grid-item" . "><h3>Longest Acoustic Songs</h3><ul>";
         foreach ($result as $row) {
             $duration = gmdate("i:s", $row[4]);
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Duration: $duration</li>";
+            echo "<li><a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> <br><b>$row[2]</b> - $duration mins</li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -117,7 +119,7 @@ function generateAtTheClub()
         echo "<div class=" . "grid-item" . "><h3>At the Club</h3><ul>";
         foreach ($result as $row) {
             $clubRating = round($row[4]);
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Club Rating: $clubRating</li>";
+            echo "<li><a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a><br><b>$row[2]</b> -<em> Club Rating: $clubRating</em></li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -137,7 +139,7 @@ function generateRunningSongs()
         echo "<div class=" . "grid-item" . "><h3>Running</h3><ul>";
         foreach ($result as $row) {
             $runScore = round($row[4]);
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Run Score: $runScore</li>";
+            echo "<li><a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a><br><b>$row[2]</b> - <em> Run Score: $runScore</em></li>";
         }
         echo "</ul></div>";
         $pdo = null;
@@ -157,7 +159,7 @@ function generateStudyingSongs()
         echo "<div class=" . "grid-item" . "><h3>Studying</h3><ul>";
         foreach ($result as $row) {
             $studyScore = round($row[5]);
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Study Score: $studyScore</li>";
+            echo "<li><a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a><br><b> $row[2]</b> - <em>Study Score: $studyScore</em></li>";
         }
         echo "</ul></div>";
         $pdo = null;
