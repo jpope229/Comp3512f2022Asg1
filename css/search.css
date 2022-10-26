@@ -5,14 +5,10 @@
     }
     
     h1 {
-        color: black;
+        color: white;
         font-size: xx-large;
-        background-color: white;
         margin-bottom: -1px;
         text-align: center;
-        opacity: 70%;
-        width: 23%;
-        background-position: center;
     }
     
     form label {
