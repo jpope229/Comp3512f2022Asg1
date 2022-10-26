@@ -24,14 +24,17 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
 <body class="sty">
     <div>
         <header>
-            <h2>COMP 3512 Assign1<h2> <br>
-                    <sub>Justin Pope, Hoomer Amid</sub>
-                    <div class="nav">
-                        <a href="index.php">Home</a>
-                        <a href="search.php">Search</a>
-                        <a href="browse.php">Browse</a>
-                        <a href="favorites.php">Favorites</a>
-                    </div>
+            <div class="headerName">
+                <h2>COMP 3512 Assign1<h2> <br>
+                        Justin Pope<br>
+                        Hoomer Amid<br>
+            </div>
+            <div class="nav">
+                <a href="index.php">Home</a>
+                <a href="search.php">Search</a>
+                <a href="browse.php">Browse</a>
+                <a href="favorites.php">Favorites</a>
+            </div>
         </header>
 
         <h1>Browse/Search Results</h1>
