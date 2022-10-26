@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once('includes/config.inc.php');
+require_once('includes/dbHelper.inc.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,6 +30,16 @@ session_start();
     </header>
 
     <h1>HOME PAGE</h1>
+    <div class="grid-container">
+        <?php generateTopGenres() ?>
+        <?php generateTopSongs() ?>
+        <?php generateTopArtists() ?>
+        <?php generateOneHitWonders() ?>
+        <?php generateLongestAcousticSongs() ?>
+        <?php generateAtTheClub() ?>
+        <?php generateRunningSongs() ?>
+        <?php generateStudyingSongs() ?>
+    </div>
 
     <footer>
         <p>COMP3512<br>
