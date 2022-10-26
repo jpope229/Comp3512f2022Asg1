@@ -48,8 +48,8 @@ require_once('includes/dbHelper.inc.php');
         <p>COMP3512F2022<br>Assign1<br>
             <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
         <div class="Names">Contributors:<br>
-            Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
-            Hoomer Amid <a href='https://github.com/hamid269'>Github</a><br>
+            <a href='https://github.com/jpope229'>Justin Pope</a><br>
+            <a href='https://github.com/hamid269'> Hoomer Amid</a><br>
         </div>
         </p>
     </footer>
