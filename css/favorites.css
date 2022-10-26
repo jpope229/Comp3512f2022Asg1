@@ -92,7 +92,8 @@ th {
 }
 
 footer {
-    position: absolute;
+    position: relative;
+    padding-bottom: auto;
     bottom: 0;
     background: #000000;
     color: white;

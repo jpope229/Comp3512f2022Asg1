@@ -1,11 +1,14 @@
 body {
-    background-image: url('../images/icons8-team-7LNatQYMzm4-unsplash.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../images/annie-theby-EXCeGbyolPY-unsplash.jpg');
+    background-repeat: repeat;
     background-size: 100%;
 }
 
 h1 {
-    color: white;
+    color: black;
+    font-size: xx-large;
+    background-color: gray;
+    margin-bottom: -1px;
 }
 
 form label {
@@ -35,10 +38,6 @@ input {
     border-radius: 15px;
 }
 
-a:hover {
-    background-color: yellow;
-    color: black;
-}
 
 h2 {
     text-align: center;
@@ -97,4 +96,9 @@ a:link, a:visited {
   
  footer a:hover, footer a:active {
     background-color: lightblue;
+  }
+
+  form{
+    background-color: lightgray;
+    opacity: 85%;
   }

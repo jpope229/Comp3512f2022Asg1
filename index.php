@@ -45,7 +45,7 @@ require_once('includes/dbHelper.inc.php');
     </div>
 
     <footer>
-        <p>COMP3512<br>
+        <p>COMP3512F2022<br>Assign1<br>
             <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
         <div class="Names">Contributors:<br>
             Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
