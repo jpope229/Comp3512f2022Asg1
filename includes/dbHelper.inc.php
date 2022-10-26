@@ -54,8 +54,10 @@ function generateTopSongs()
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>Most Popular Songs</h3><ul>";
+        $position = 1;
         foreach ($result as $row) {
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a></li>";
+            echo "<li>$position - $row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a></li>";
+            $position++;
         }
         echo "</ul></div>";
         $pdo = null;
