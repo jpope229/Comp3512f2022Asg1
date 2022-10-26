@@ -122,3 +122,6 @@
     #submit {
         text-align: center;
     }
+    div.headerName{
+        background-color: gray;
+    }

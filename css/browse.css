@@ -1,3 +1,8 @@
+div.headerName{
+    background-color: gray;
+}
+    
+    
     /* spacing */
     
     table {
@@ -168,3 +173,4 @@
         background-color: lightblue;
         color: black;
     }
+    

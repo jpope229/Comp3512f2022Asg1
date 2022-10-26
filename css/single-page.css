@@ -107,7 +107,7 @@ h4 {
     text-align: center;
     align-items: center;
 }
-
-e {
-    font-size: small;
+div.headerName{
+    background-color: gray;
 }
+

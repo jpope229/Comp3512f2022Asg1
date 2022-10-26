@@ -5,6 +5,10 @@ body {
     background-size: cover;
 }
 
+div.headerName{
+    background-color: gray;
+}
+
 .headerName a:link,
 .headerName a:visited {
     background-color: black;
