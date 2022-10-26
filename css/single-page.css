@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('../images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background-image: url('../images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -80,4 +80,17 @@ a:link, a:visited {
   
  footer a:hover, footer a:active {
     background-color: lightblue;
+  }
+
+  .column{
+    text-align: left;
+  }
+/*single song page row information*/
+  b {
+    font-size: larger;
+  }
+
+  h4 {
+    text-align: center;
+    align-items: center;
   }
