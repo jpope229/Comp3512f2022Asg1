@@ -53,13 +53,13 @@ function generateTopSongs()
         $pdo = new PDO(DBCONNSTRING);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $result = $pdo->query($sql);
-        echo "<div class=" . "grid-item" . "><h3>Most Popular Songs</h3><ul>";
+        echo "<div class=" . "grid-item" . "><h3>Most Popular Songs</h3><ol>";
         $position = 1;
         foreach ($result as $row) {
             echo "<li>$position - $row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a></li>";
             $position++;
         }
-        echo "</ul></div>";
+        echo "</ol></div>";
         $pdo = null;
     } catch (PDOException $e) {
         die($e->getMessage());
@@ -117,7 +117,7 @@ function generateAtTheClub()
         echo "<div class=" . "grid-item" . "><h3>At the Club</h3><ul>";
         foreach ($result as $row) {
             $clubRating = round($row[4]);
-            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Club Rating: $clubRating)</li>";
+            echo "<li>$row[2] - <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> - Club Rating: $clubRating</li>";
         }
         echo "</ul></div>";
         $pdo = null;
