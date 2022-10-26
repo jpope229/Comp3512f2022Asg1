@@ -48,10 +48,10 @@ if (!empty($_GET['ID'])) {
             foreach ($result as $row) {
                 $duration = gmdate("i:s", $row[5]);
                 echo "<div><div class=" . "row" . ">
-            <div class=" . "column" . ">Song Title <br>Artist Name <br>Artist Type <br>Genre <br> Year <br>Duration</div>
-            <div class=" . "column" . ">$row[0]<br>$row[1]<br>$row[2]<br>$row[3]<br>$row[4]<br>$duration minutes</div>
+            <div class=" . "column" . "><b>Song Title</b> <br> <b>Artist Name</b> <br><b>Artist Type</b> <br><b>Genre</b> <br><b> Year</b> <br><b>Duration</b></div>
+            <div class=" . "column" . "><b>$row[0]</b><br><b>$row[1]</b><br><b>$row[2]</b><br><b>$row[3]</b><br><b>$row[4]</b><br><b>$duration mins</b></div>
             </div><br>";
-                echo "<sub>BPM $row[6] - Energy $row[7] - Danceability $row[8] - Liveness $row[9] - Valence $row[10] - Acousticness $row[11] - Speechiness $row[12] - Popularity $row[13]</sub></div>";
+                echo "<h4>Analysis Data</h4><sub>BPM $row[6] - Energy $row[7] - Danceability $row[8] - Liveness $row[9] - Valence $row[10] - Acousticness $row[11] - Speechiness $row[12] - Popularity $row[13]</sub></div>";
             }
             $pdo = null;
         } catch (PDOException $e) {
