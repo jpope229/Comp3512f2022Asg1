@@ -90,13 +90,17 @@ try {
         </div>
         <br>
         <input type="submit" value="Search">
-    </form> 
+    </form>
 
     <footer>
         <p>COMP3512<br>
+            <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
+        <div class="Names">Contributors:<br>
             Justin Pope <a href='https://github.com/jpope229'>Github</a><br>
-            Hoomer Amid <a href='https://github.com/hamid269'>Github</a>
+            Hoomer Amid <a href='https://github.com/hamid269'>Github</a><br>
+        </div>
         </p>
     </footer>
 </body>
+
 </html>
