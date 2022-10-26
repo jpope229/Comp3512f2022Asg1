@@ -67,6 +67,7 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
                 <a href='https://github.com/hamid269'>Hoomer Amid</a><br>
             </div>
             </p>
+            Background from <a href='https://unsplash.com/photos/EXCeGbyolPY'>Unsplash </a>
         </footer>
     </div>
 
