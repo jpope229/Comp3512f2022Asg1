@@ -151,6 +151,10 @@ h1.queryName{
         text-decoration: none;
         border-radius: 15px;
     }
+
+    .fav:active{
+        background-color: lightgreen;
+    }
     
     .viewme {
         padding: 2px 5px;

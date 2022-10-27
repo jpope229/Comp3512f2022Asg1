@@ -128,14 +128,18 @@ a:active {
     background-color: green;
 }
 
-a.rmfav:hover,
-a.rmfav:active {
+a.rmfav:hover{
     background-color: red;
 }
+a.rmfav:active {
+    background-color: pink;
+}
 
-a.viewme:hover,
-a.viewme:active {
+a.viewme:hover{
     background-color: blue;
+}
+a.viewme:active {
+    background-color: purple;
 }
 
 footer a:link,
