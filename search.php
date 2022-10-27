@@ -36,9 +36,9 @@ try {
 <body>
     <header>
         <div class="headerName">
-            <h2>COMP 3512 Assign1<h2> <br>
-                    Justin Pope<br>
-                    Hoomer Amid<br>
+            <h2>COMP 3512 Assign1</h2> <br>
+            Justin Pope<br>
+            Hoomer Amid<br>
         </div>
         <div class="nav">
             <a href="index.php">Home</a>
@@ -54,8 +54,8 @@ try {
         <input type="text" id="title" name="title"><br>
         <div class="row">
             <div class="column">
-                <label for="artist">Artist</label><br>
-                <select class="ui fluid dropdown" name="artist_select">
+                <label for="artist_select">Artist</label><br>
+                <select class="ui fluid dropdown" id="artist_select">
                     <option value='0'>Select Artist</option>
                     <?php
                     foreach ($artists as $a) {
@@ -65,8 +65,8 @@ try {
                 </select><br>
             </div>
             <div class="column">
-                <label for="genre">Genre</label><br>
-                <select class="ui fluid dropdown" name="genre_select">
+                <label for="genre_select">Genre</label><br>
+                <select class="ui fluid dropdown" id="genre_select">
                     <option value='0'>Select Genre</option>
                     <?php
                     foreach ($genre as $g) {
