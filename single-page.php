@@ -34,7 +34,7 @@ if (!empty($_GET['ID'])) {
         </div>
     </header>
 
-    <h1>Song information</h1>
+    <h1 class="pageName">Song information</h1>
     <div class="songInfo">
         <?php
         try {

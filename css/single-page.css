@@ -117,3 +117,15 @@ div.headerName{
     width: 100%;
 }
 
+h1.pageName {
+    color: lightgreen;
+    background: black;
+    opacity: 90%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}

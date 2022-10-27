@@ -32,7 +32,7 @@ require_once('includes/dbHelper.inc.php');
         </div>
     </header>
 
-    <h1>HOME</h1>
+    <h1 class="pageName">HOME</h1>
     <div class="grid-container">
         <?php generateTopGenres() ?>
         <?php generateTopSongs() ?>

@@ -7,7 +7,29 @@ div.headerName{
     opacity: 80%;
     width: 100%;
 }
-    
+
+h1.pageName {
+    color: lightgreen;
+    background: black;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+h1.queryName{
+    color: beige;
+    background: black;
+    opacity: 85%;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
     
     /* spacing */
     

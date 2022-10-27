@@ -48,7 +48,7 @@ try {
         </div>
     </header>
 
-    <h1>Basic Song Search</h1>
+    <h1 class="pageName">Basic Song Search</h1>
     <form action="browse.php" method="get">
         <label for="title">Title</label><br>
         <input type="text" id="title" name="title"><br>
