@@ -17,7 +17,7 @@ Limit 10";
         echo "<div class=" . "grid-item" . "><h3>Top Genres</h3><ul>";
         $position = 1;
         foreach ($result as $row) {
-            echo "<li>$position.<b>$row[1]</b><br>$row[2] Songs</li>";
+            echo "<li>$position.<b>$row[1]</b><br>$row[2] Songs</li><hr>";
             $position++;
         }
         echo "</ul></div>";
@@ -37,7 +37,7 @@ function generateTopArtists()
         $result = $pdo->query($sql);
         echo "<div class=" . "grid-item" . "><h3>Top Artists</h3><ul>";
         foreach ($result as $row) {
-            echo "<li><b>$row[1]</b> <br> $row[2] Songs</li>";
+            echo "<li><b>$row[1]</b> <br> $row[2] Songs</li><hr>";
         }
         echo "</ul></div>";
         $pdo = null;

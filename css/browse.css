@@ -35,9 +35,9 @@ h1.queryName{
     
     table {
         table-layout: fixed;
-        width: 100%;
+        width: 80%;
         border-collapse: collapse;
-        border: 3px solid purple;
+        border: 12px solid black;
     }
     
     thead th:nth-child(1) {
@@ -69,12 +69,9 @@ h1.queryName{
         border: 10px solid darkgray;
     }
     
-    td table,
-    th,
+    table,
     td {
-        border-collapse: collapse;
         padding: 2px;
-        border: 10px solid darkgray;
     }
     
     a {
@@ -91,6 +88,10 @@ h1.queryName{
         background-color: lightgray;
         color: #000000;
         font-size: 120%;
+        border-bottom: 10px solid black;
+    }
+    tr{
+        border: 10px solid black;
     }
     
     .sty {

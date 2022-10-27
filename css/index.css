@@ -127,11 +127,12 @@ footer a:active {
 }
 
 .grid-item h3 {
-    background-color: lightgrey;
+    background-color: lightgreen;
     border-radius: 40px;
     text-align: center;
     padding: 15px;
     font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .grid-item li {
