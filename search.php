@@ -96,14 +96,17 @@ try {
     </form>
 
     <footer>
-        <p>COMP3512<br>
-            <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Assignment Repository </a><br>
+        <div>
+            COMP3512F2022<br>
+            Assign1
+            <a href='https://github.com/jpope229/Comp3512f2022Asg1'>Github Repository </a><br>
+        </div>
+        <br>
         <div class="Names">Contributors:<br>
             <a href='https://github.com/jpope229'>Justin Pope</a><br>
-            <a href='https://github.com/hamid269'>Hoomer Amid</a><br>
+            <a href='https://github.com/hamid269'> Hoomer Amid</a><br>
         </div>
-        Background from <a href='https://unsplash.com/photos/EXCeGbyolPY'>Unsplash </a>
-        </p>
+        Background from <a href='https://unsplash.com/photos/gUK3lA3K7Yo'>Unsplash </a>
     </footer>
 </body>
 
