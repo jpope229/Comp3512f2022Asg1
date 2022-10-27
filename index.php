@@ -34,11 +34,11 @@ require_once('includes/dbHelper.inc.php');
 
     <h1 class="pageName">Home</h1>
     <div class="grid-container">
-        <?php generateTopGenres() ?>
-        <?php generateTopSongs() ?>
         <?php generateTopArtists() ?>
+        <?php generateTopSongs() ?>
         <?php generateOneHitWonders() ?>
         <?php generateLongestAcousticSongs() ?>
+        <?php generateTopGenres() ?>
         <?php generateAtTheClub() ?>
         <?php generateRunningSongs() ?>
         <?php generateStudyingSongs() ?>
