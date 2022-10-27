@@ -25,7 +25,7 @@ require_once('includes/dbHelper.inc.php');
                     </div>
         </div>
         <div class="nav">
-            <a class="active" href="index.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="search.php">Search</a>
             <a href="browse.php">Browse</a>
             <a href="favorites.php">Favorites</a>

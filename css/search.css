@@ -42,7 +42,10 @@
         font-size: 20px;
         border-radius: 15px;
     }
+    div.nav a:active{
+        background-color:  lightgreen ;
     
+    }
     h2 {
         color: white;
         text-align: center;
@@ -117,6 +120,10 @@
     #submit:hover {
         color: white;
         background-color: green;
+    }
+    #submit:active {
+        color: white;
+        background-color: lightgreen;
     }
     
     #submit {

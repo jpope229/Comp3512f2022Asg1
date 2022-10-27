@@ -43,8 +43,9 @@ h1.pageName {
     font-weight: bolder;
 }
 
-a.active {
-    background-color: green;
+div.nav a:active{
+    background-color:  lightgreen;
+
 }
 
 .nav a {

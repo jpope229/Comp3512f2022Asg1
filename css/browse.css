@@ -201,3 +201,23 @@ h1.queryName{
         background-color: lightblue;
         color: black;
     }
+
+div.nav a:active{
+    background-color:  lightgreen ;
+
+}
+    a.viewme:hover{
+        background-color: blue;
+
+    }
+    a.viewme:active {
+        background-color: purple;
+    }
+
+    a.showAllButton:hover{
+        background-color: blue;
+    }
+    
+    a.showAllButton:active {
+        background-color: purple;
+    }
