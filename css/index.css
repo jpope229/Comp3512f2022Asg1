@@ -66,14 +66,18 @@ h2 {
 }
 
 footer {
+    margin-top: 20px;
     position: static;
-    bottom: 0;
-    padding: 5px;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     background: #000000;
     color: white;
-    width: 100%;
     text-align: center;
     opacity: 80%;
+    width: 40%;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 div.nav a:link,
@@ -111,8 +115,10 @@ footer a:active {
     grid-template-columns: auto auto auto auto;
     background-color: grey;
     padding: 5px;
-    justify-content: space-evenly;
     border-radius: 12px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-item {
@@ -147,6 +153,7 @@ div.grid-item a, div.grid-item a:hover{
     font-size: larger;
     text-decoration: none; 
     font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 }
@@ -159,4 +166,8 @@ div.grid-item a:hover{
 div.grid-item a:active{
     color: blueviolet;
     text-decoration: none; 
+}
+
+b{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
