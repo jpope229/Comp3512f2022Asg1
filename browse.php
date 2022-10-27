@@ -25,9 +25,9 @@ if (!empty($_GET['title']) or !empty($_GET['artist_select']) or !empty($_GET['ge
     <div>
         <header>
             <div class="headerName">
-                <h2>COMP 3512 Assign1<h2> <br>
-                        Justin Pope<br>
-                        Hoomer Amid<br>
+                <h2>COMP 3512 Assign1</h2> <br>
+                Justin Pope<br>
+                Hoomer Amid<br>
             </div>
             <div class="nav">
                 <a href="index.php">Home</a>
