@@ -55,7 +55,7 @@ try {
         <div class="row">
             <div class="column">
                 <label for="artist_select">Artist</label><br>
-                <select class="ui fluid dropdown" id="artist_select">
+                <select class="ui fluid dropdown" id="artist_select" name="artist_select">
                     <option value='0'>Select Artist</option>
                     <?php
                     foreach ($artists as $a) {
@@ -66,7 +66,7 @@ try {
             </div>
             <div class="column">
                 <label for="genre_select">Genre</label><br>
-                <select class="ui fluid dropdown" id="genre_select">
+                <select class="ui fluid dropdown" id="genre_select" name="genre_select">
                     <option value='0'>Select Genre</option>
                     <?php
                     foreach ($genre as $g) {
