@@ -17,7 +17,7 @@ Limit 10";
         echo "<div class=" . "grid-item" . "><h3>Top Genres</h3><ul>";
         $position = 1;
         foreach ($result as $row) {
-            echo "<li>$position.<b>$row[1]</b><br>$row[2] Songs</li><hr>";
+            echo "<li>$position) <b>$row[1]</b><br>$row[2] Songs</li><hr>";
             $position++;
         }
         echo "</ul></div>";
@@ -58,7 +58,7 @@ function generateTopSongs()
         echo "<div class=" . "grid-item" . "><h3>Most Popular Songs</h3><ul>";
         $position = 1;
         foreach ($result as $row) {
-            echo "<li>$position. <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> <br><b>$row[2]</b></li>";
+            echo "<li>$position)  <a href=" . "single-page.php?ID=" . "$row[0]" . ">$row[1]</a> <br><b>$row[2]</b></li>";
             $position++;
         }
         echo "</ul></div>";
