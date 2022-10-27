@@ -83,6 +83,7 @@ th {
     display: block;
     text-align: center;
     text-decoration: none;
+    border-radius: 15px;
 }
 
 .viewme {
@@ -94,6 +95,7 @@ th {
     display: block;
     text-align: center;
     text-decoration: none;
+    border-radius: 15px;
 }
 
 footer {

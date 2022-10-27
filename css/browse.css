@@ -149,6 +149,7 @@ h1.queryName{
         display: block;
         text-align: center;
         text-decoration: none;
+        border-radius: 15px;
     }
     
     .viewme {
@@ -160,6 +161,7 @@ h1.queryName{
         display: block;
         text-align: center;
         text-decoration: none;
+        border-radius: 15px;
     }
     
     footer {
@@ -226,4 +228,8 @@ div.nav a:active{
     
     a.showAllButton:active {
         background-color: purple;
+    }
+
+    .showAllButton{
+        border-radius: 15px;
     }
