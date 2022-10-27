@@ -96,15 +96,17 @@ th {
 }
 
 footer {
-    position: relative;
+    margin-top: 20px;
+    position: static;
     padding-bottom: auto;
-    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     background: #000000;
     color: white;
     text-align: center;
     opacity: 80%;
-    width: 100%;
-    margin-left: -8px;
+    width: 40%;
+    border-radius: 15px;
 }
 
 a:link,

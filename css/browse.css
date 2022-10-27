@@ -96,8 +96,8 @@ h1.queryName{
     
     .sty {
         background-image: url('../images/annie-theby-EXCeGbyolPY-unsplash.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-repeat: repeat;
+        background-attachment:scroll;
         background-size: 100%;
     }
     
@@ -162,14 +162,17 @@ h1.queryName{
     }
     
     footer {
-        position: static;
-        bottom: 0;
-        background: #000000;
-        color: white;
-        text-align: center;
-        opacity: 80%;
-        width: 100%;
-        margin-left: 0px;
+        margin-top: 20px;
+    position: static;
+    padding-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000000;
+    color: white;
+    text-align: center;
+    opacity: 80%;
+    width: 40%;
+    border-radius: 15px;
     }
     
     a:link,

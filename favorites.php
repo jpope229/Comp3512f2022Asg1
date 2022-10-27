@@ -42,7 +42,6 @@ session_start();
         </tr>
         <?php generateFavoritesList() ?>
     </table>
-
     <footer>
         <div>
             COMP3512F2022<br>
