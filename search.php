@@ -78,17 +78,17 @@ try {
         </div>
         <br>
         <div class="row">
-            <div class="column">Year<br>
+            <div class="column"><b>Year</b><br>
                 <input type="text" id="yearLesser" name="yearL">
                 <label for="yearLesser">Less</label><br>
                 <input type="text" id="yearGreater" name="yearG">
                 <label for="yearGreater">Greater</label><br>
             </div>
-            <div class="column"> Popularity<br>
-                <input type="text" id="popLesser" name="popL">
-                <label for="popLesser">Less</label><br>
-                <input type="text" id="popGreater" name="popG">
-                <label for="popGreater">Greater</label><br>
+            <div class="column"><b>Popularity<b><br>
+                        <input type="text" id="popLesser" name="popL">
+                        <label for="popLesser">Less</label><br>
+                        <input type="text" id="popGreater" name="popG">
+                        <label for="popGreater">Greater</label><br>
             </div>
         </div>
         <br>
